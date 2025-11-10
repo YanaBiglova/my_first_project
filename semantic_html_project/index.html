@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантическая верстка - Веревочный парк</title>
+    <!-- <link rel="stylesheet" href="style.css"> --> <!-- Убрано подключение CSS-файла -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AmusementPark",
+      "name": "Веревочный парк",
+      "description": "Ощутите всю остроту экстрима на высоте в нашем веревочном парке!",
+      "url": "http://www.example.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Примерная, 10",
+        "addressLocality": "Город",
+        "addressRegion": "Регион",
+        "postalCode": "123456",
+        "addressCountry": "RU"
+      },
+      "openingHours": [
+        "Mo-Fr 10:00-20:00",
+        "Sa-Su 09:00-22:00"
+      ],
+      "image": "http://www.example.com/images/park_logo.jpg",
+      "telephone": "+7-XXX-XXX-XX-XX",
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.facebook.com/ropepark",
+        "https://www.instagram.com/ropepark"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header itemscope itemtype="https://schema.org/WPHeader">
+        <span>Веревочный парк</span>
+            <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <ul>
+                    <li><a href="#about" itemprop="url"><span itemprop="name">О НАС</span></a></li>
+                    <li><a href="#tracks" itemprop="url"><span itemprop="name">ТРАССЫ</span></a></li>
+                    <li><a href="#schedule" itemprop="url"><span itemprop="name">РАСПИСАНИЕ</span></a></li>
+                    <li><a href="#booking" itemprop="url"><span itemprop="name">ЗАБРОНИРОВАТЬ</span></a></li>
+                    <li><a href="#contacts" itemprop="url"><span itemprop="name">КОНТАКТЫ</span></a></li>
+                </ul>
+            </nav>
+
+        <p>ГОРНЫЙ АКТИВНЫЙ ОТДЫХ</p>
+        <h1 itemprop="headline">ВЕРЕВОЧНЫЙ ПАРК</h1>
+        <p itemprop="description">Ощутите всю остроту экстрима на высоте!</p>
+        <div>
+            <span>4 ТРАССЫ</span>
+            <span>ДЛЯ ВСЕХ ВОЗРАСТОВ</span>
+            <span>СЕРТИФИЦИРОВАННЫЕ ИНСТРУКТОРЫ</span>
+            <span>БЕЗОПАСНОСТЬ</span>
+        </div>
+        <button>ВЫБРАТЬ ТРАССУ</button>
+    </header>
+    <main>
+        <section id="about">
+            <h2>О НАС</h2>
+            <p>Наш веревочный парк - это идеальное место для активного отдыха всей семьей или с друзьями. Мы предлагаем разнообразные трассы для всех уровней подготовки, от самых маленьких до опытных экстремалов. Почувствуйте прилив адреналина и проверьте свою ловкость на высоте!</p>
+            <div>
+                <div>
+                    <span>4</span>
+                    <span>ТРАССЫ</span>
+                    <span>на любой вкус и возраст</span>
+                </div>
+                <div>
+                    <span>120</span>
+                    <span>МЕТРОВ</span>
+                    <span>общая протяженность</span>
+                </div>
+                <div>
+                    <span>10</span>
+                    <span>ЛЕТ</span>
+                    <span>безопасной работы</span>
+                </div>
+                <div>
+                    <span>15</span>
+                    <span>МЕТРОВ</span>
+                    <span>максимальная высота</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="tracks">
+            <h2>НАШИ ТРАССЫ</h2>
+
+            <article id="white" itemscope itemtype="https://schema.org/Article">
+                <header>
+                    <h3 itemprop="name">Белая трасса <br> <span>Легкая</span></h3>
+                </header>
+                <div>
+                    <section itemprop="articleBody">
+                        <p>Идеально подходит для самых маленьких посетителей и тех, кто только начинает осваивать веревочные приключения. Низкая высота и простые препятствия обеспечивают максимальную безопасность и удовольствие.</p>
+                        <ul>
+                            <li>Высота: до 2 метров</li>
+                            <li>Минимальный возраст: 4 года</li>
+                            <li>Количество препятствий: 8</li>
+                        </ul>
+                    </section>
+                    <div>
+                        <img src="https://norwaypark-spb.ru/sites/default/files/gallery2/17weborechXRrxvH.webp" alt="Белая трасса веревочного парка">
+                        <div></div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="red" itemscope itemtype="https://schema.org/Article">
+                <header>
+                    <h3 itemprop="name">Красная трасса <br> <span>Средняя</span></h3>
+                </header>
+                <div>
+                    <div>
+                        <img src="https://shop.krasnayapolyanaresort.ru/image/catalog/verevochniy_park/verev_3.jpg" alt="Красная трасса веревочного парка">
+                        <div></div>
+                    </div>
+                    <section itemprop="articleBody">
+                        <p>Для тех, кто уже уверенно чувствует себя на высоте. Трасса включает более сложные элементы и небольшие испытания на равновесие и координацию. Приготовьтесь к захватывающим моментам!</p>
+                        <ul>
+                            <li>Высота: до 5 метров</li>
+                            <li>Минимальный возраст: 8 лет</li>
+                            <li>Количество препятствий: 12</li>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+
+            <article id="green" itemscope itemtype="https://schema.org/Article">
+                <header>
+                    <h3 itemprop="name">Зеленая трасса <br> <span>Сложная</span></h3>
+                </header>
+                <div>
+                    <section itemprop="articleBody">
+                        <p>Настоящее испытание для любителей экстрима! Высокие переходы, сложные переправы и уникальные элементы, требующие силы и ловкости. Получите максимальный выброс адреналина!</p>
+                        <ul>
+                            <li>Высота: до 10 метров</li>
+                            <li>Минимальный возраст: 12 лет</li>
+                            <li>Количество препятствий: 15</li>
+                        </ul>
+                    </section>
+                    <div>
+                        <img src="https://adventure-park.ru/wp-content/themes/park2025/img/park/track4.jpg" alt="Зеленая трасса веревочного парка">
+                        <div></div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="black" itemscope itemtype="https://schema.org/Article">
+                <header>
+                    <h3 itemprop="name">Черная трасса <br> <span>Экстремальная</span></h3>
+                </header>
+                <div>
+                    <div>
+                        <img src="https://www.timeout.ru/wp-content/uploads/2020/09/cutdsc_0344-e1601410811514.jpg" alt="Черная трасса веревочного парка">
+                        <div></div>
+                    </div>
+                    <section itemprop="articleBody">
+                        <p>Самая сложная и захватывающая трасса для настоящих профессионалов и тех, кто ищет максимальные ощущения. Готовы принять вызов? Эта трасса ждет вас!</p>
+                        <ul>
+                            <li>Высота: до 15 метров</li>
+                            <li>Минимальный возраст: 16 лет</li>
+                            <li>Количество препятствий: 20</li>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+        </section>
+
+
+        <section id="booking">
+            <button>ПОСМОТРЕТЬ ЦЕНЫ</button>
+            <button>ЗАБРОНИРОВАТЬ</button>
+        </section>
+
+        <section id="subscription" itemscope itemtype="https://schema.org/WebPageElement">
+            <h2>ПОЛУЧАЙТЕ НОВОСТИ ПАРКА</h2>
+            <form action="/subscribe" method="post">
+                <p>Будьте в курсе наших акций, специальных предложений и новостей!</p>
+                <div>
+                    <label for="email">Ваш email:</label>
+                    <input autocomplete="email" type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+                <button type="submit">Подписаться</button>
+            </form>
+        </section>
+
+        <section id="schedule" itemscope itemtype="https://schema.org/Table">
+            <h2>РАСПИСАНИЕ РАБОТЫ</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Трасса</th>
+                        <th>Будни (Пн-Пт)</th>
+                        <th>Выходные (Сб-Вс)</th>
+                        <th>Возраст</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#white" itemprop="url"><span itemprop="name">Белая</span></a></td>
+                        <td>10:00 - 19:00</td>
+                        <td>09:00 - 20:00</td>
+                        <td>от 4 лет</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#red" itemprop="url"><span itemprop="name">Красная</span></a></td>
+                        <td>10:00 - 18:00</td>
+                        <td>09:00 - 19:00</td>
+                        <td>от 8 лет</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#green" itemprop="url"><span itemprop="name">Зеленая</span></a></td>
+                        <td>11:00 - 17:00</td>
+                        <td>10:00 - 18:00</td>
+                        <td>от 12 лет</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#black" itemprop="url"><span itemprop="name">Черная</span></a></td>
+                        <td>12:00 - 16:00</td>
+                        <td>11:00 - 17:00</td>
+                        <td>от 16 лет</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <aside itemscope itemtype="https://schema.org/WPSideBar">
+        <h3>НАШИ ТРАССЫ</h3>
+        <ul>
+            <li><a href="#black" itemprop="url"><span itemprop="name">Черная</span></a></li>
+            <li><a href="#red" itemprop="url"><span itemprop="name">Красная</span></a></li>
+            <li><a href="#green" itemprop="url"><span itemprop="name">Зеленая</span></a></li>
+            <li><a href="#white" itemprop="url"><span itemprop="name">Белая</span></a></li>
+        </ul>
+    </aside>
+    <footer itemscope itemtype="https://schema.org/WPFooter">
+        <p>&copy; 2025 <span itemprop="copyrightHolder">Веревочный парк</span>. Все права защищены.</p>
+        <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <a href="/privacy" itemprop="url"><span itemprop="name">Политика конфиденциальности</span></a>
+            <a href="/contacts" itemprop="url"><span itemprop="name">Контакты</span></a>
+        </nav>
+        <div></div>
+    </footer>
+</body>
+</html>
